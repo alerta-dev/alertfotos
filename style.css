@@ -10,16 +10,23 @@ body {
 
 #masonry {
   display: flex;
-  gap: 16px;
   flex-wrap: wrap;
+  gap: 16px;
   max-width: 1200px;
   margin: auto;
 }
 
 .masonry-item {
-  display: block;
-  width: calc(30% 1&);
-  position-ite
-  width: calc
+  width: calc(33.333% - 16px);
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
 }
-/masonry capth;flex;:This code fo
+
+.masonry-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
