@@ -1,15 +1,12 @@
 const gallery = document.getElementById("gallery");
 
-// Esta función carga todas las imágenes de la carpeta "images"
 async function loadImages() {
   try {
-    const response = await fetch('./images');
-    const html = await response.text();
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, 'text/html');
-    const images = Array.from(doc.querySelectorAll('a'))
-      .filter(link => link.href.match(/\.(jpg|jpeg|png|gif)$/i))
-      .map(link => link.href);
+    const response = await fetch('/api/images');
+    const images = await response.json();
+
+    // Ordena las imágenes aleatoriamente
+    images.sort(() => Math.random() - 0.5);
 
     images.forEach(src => {
       const item = document.createElement('div');
