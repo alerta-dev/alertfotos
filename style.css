@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+#masonry {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.masonry-item {
+  display: block;
+  width: calc(30% 1&);
+  position-ite
+  width: calc
+}
+/masonry capth;flex;:This code fo
