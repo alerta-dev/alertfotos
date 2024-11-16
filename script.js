@@ -2,7 +2,7 @@ const gallery = document.getElementById("gallery");
 
 async function loadImages() {
   try {
-    const response = await fetch('/api/images');
+    const response = await fetch('/api/images.js');
     const images = await response.json();
 
     // Ordena las imágenes aleatoriamente
